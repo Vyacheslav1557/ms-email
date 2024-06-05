@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package proto.smtp.v1;
+
+message EmailRequest{
+  string to = 1;
+  string subject = 2;
+  string body = 3;
+}
+
+message EmailResponse{
+  string status = 1;
+}
